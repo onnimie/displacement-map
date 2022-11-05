@@ -51,26 +51,6 @@ object TextureOps:
 
     def makeGrayCopy(img: BufferedImage): BufferedImage = 
         val ret = this.copyImage(img)
-
-        for x <- 0 until ret.getWidth() do
-            for y <- 0 until ret.getHeight() do
-
-                val rgb: Int = ret.getRGB(x, y)
-                val r: Int = (rgb >> 16) & 0xFF
-                val g: Int = (rgb >> 8) & 0xFF
-                val b: Int = (rgb & 0xFF)
-
-                // Normalize and gamma correct:
-                val rr: Double = pow(r / 255.0, 2.2)
-                val gg: Double = pow(g / 255.0, 2.2)
-                val bb: Double = pow(b / 255.0, 2.2)
-
-                // Calculate luminance:
-                val lum: Double = 0.2126 * rr + 0.7152 * gg + 0.0722 * bb
-
-                // Gamma compand and rescale to byte range:
-                val grayLevel: Int = (255.0 * pow(lum, 1.0 / 2.2)).toInt
-                val gray: Int = (grayLevel << 16) + (grayLevel << 8) + grayLevel;
-                ret.setRGB(x, y, gray)
+        this.makeGray(ret)
         ret
     end makeGrayCopy
