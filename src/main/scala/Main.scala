@@ -8,10 +8,12 @@ class MainWindow() extends MainFrame:
 
     title = "window title c:"
 
-    contents = new Panel:
+    val test_image = Image("./images/redsand.png")
+
+    val contentsPanel = new FlowPanel:
 
         background = Color.darkGray
-        preferredSize = new Dimension(300, 300)
+        preferredSize = new Dimension(1200, 600)
 
         override protected def paintComponent(g: Graphics2D): Unit =
 
@@ -19,8 +21,15 @@ class MainWindow() extends MainFrame:
 
             g.setColor(Color.red)
             g.drawRect(100,100,100,100)
+
+            g.drawImage(test_image.bufferedImage, 600, 200, null)
         
         end paintComponent
+
+        //contents += test_image.imageLabel // this would work as well as the g.drawImage with bufferedImage
+
+    contents = contentsPanel
+ 
 
 
 end MainWindow
