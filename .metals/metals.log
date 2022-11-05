@@ -1,0 +1,209 @@
+2022.11.05 22:33:20 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\onni\Documents\codescala\displacement-map\.metals\lsp.trace.json or C:\Users\onni\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.11.05 22:33:21 INFO  logging to file C:\Users\onni\Documents\codescala\displacement-map\.metals\metals.log
+2022.11.05 22:33:21 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\onni\Documents\codescala\displacement-map' for client Visual Studio Code 1.72.2.
+2022.11.05 22:33:21 WARN  Can't instantiate JavaInteractiveSemanticdb (version: JdkVersion(8), jdkHome: C:\Program Files\Java\jre1.8.0_301, javac exists: false)
+2022.11.05 22:33:22 INFO  time: initialize in 0.61s
+2022.11.05 22:33:22 WARN  Build server is not auto-connectable.
+2022.11.05 22:33:22 WARN  no build tool detected in workspace 'C:\Users\onni\Documents\codescala\displacement-map'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.11.05 22:33:22 WARN  no build target for: C:\Users\onni\Documents\codescala\displacement-map\src\main\scala\Main.scala
+2022.11.05 22:33:24 INFO  no build target found for C:\Users\onni\Documents\codescala\displacement-map\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.05 22:33:35 WARN  no build target for: C:\Users\onni\Documents\codescala\displacement-map\build.sbt
+marraskuuta 05, 2022 10:34:03 IP. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23
+2022.11.05 22:34:17 WARN  no build target for: C:\Users\onni\Documents\codescala\displacement-map\build.sbt
+2022.11.05 22:34:19 INFO  running 'C:\Program Files\Java\jre1.8.0_301\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.7.1 -jar C:\Users\onni\AppData\Local\Temp\metals2814697841532121392\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2022.11.05 22:34:19 ERROR [info] [launcher] getting org.scala-sbt sbt 1.7.1  (this may take some time)...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.7.1/logic_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.7.1/main_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.7.1/main-settings_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.7.1/run_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.7.0/io_2.12-1.7.0.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.7.1/actions_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.7.1/sbt-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.7.1/zinc-lm-integration_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.7.1/collections_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.7.1/command_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.7.1/scripted-plugin_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR :: loading settings :: url = jar:file:/C:/Users/onni/AppData/Local/Temp/metals2814697841532121392/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#run_2.12;1.7.1!run_2.12.jar (158ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.7.1/util-logging_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-lm-integration_2.12;1.7.1!zinc-lm-integration_2.12.jar (238ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.7.0/librarymanagement-core_2.12-1.7.0.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#sbt;1.7.1!sbt.jar (247ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.7.0/librarymanagement-ivy_2.12-1.7.0.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#logic_2.12;1.7.1!logic_2.12.jar (263ms)
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#scripted-plugin_2.12;1.7.1!scripted-plugin_2.12.jar (263ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.7.1/compiler-interface-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.7.1/zinc-compile_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#actions_2.12;1.7.1!actions_2.12.jar (307ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.7.1/util-relation_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#command_2.12;1.7.1!command_2.12.jar (357ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.7.1/util-position_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#collections_2.12;1.7.1!collections_2.12.jar (365ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#main-settings_2.12;1.7.1!main-settings_2.12.jar (419ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.7.1/completion_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#io_2.12;1.7.0!io_2.12.jar (457ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.7.1/task-system_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-compile_2.12;1.7.1!zinc-compile_2.12.jar (267ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.7.1/tasks_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-relation_2.12;1.7.1!util-relation_2.12.jar (231ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.7.1/testing_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-position_2.12;1.7.1!util-position_2.12.jar (205ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.7.1/util-tracking_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#librarymanagement-ivy_2.12;1.7.0!librarymanagement-ivy_2.12.jar (326ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.7.1/zinc-classpath_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#librarymanagement-core_2.12;1.7.0!librarymanagement-core_2.12.jar (377ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.7.1/zinc-apiinfo_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#compiler-interface;1.7.1!compiler-interface.jar (373ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.7.1/zinc_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#testing_2.12;1.7.1!testing_2.12.jar (164ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.7.1/util-control_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#tasks_2.12;1.7.1!tasks_2.12.jar (173ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.7.1/util-interface-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-tracking_2.12;1.7.1!util-tracking_2.12.jar (152ms)
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-classpath_2.12;1.7.1!zinc-classpath_2.12.jar (143ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.7.1/core-macros_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.16/scala-compiler-2.12.16.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-apiinfo_2.12;1.7.1!zinc-apiinfo_2.12.jar (128ms)
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#completion_2.12;1.7.1!completion_2.12.jar (328ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.9/file-tree-views-2.1.9.jar ...
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc_2.12;1.7.1!zinc_2.12.jar (127ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#main_2.12;1.7.1!main_2.12.jar (781ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.7.1/util-cache_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-interface;1.7.1!util-interface.jar (96ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.7.1/test-agent-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-control_2.12;1.7.1!util-control_2.12.jar (132ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.7.1/compiler-bridge_2.12-1.7.1.jar ...
+2022.11.05 22:34:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#core-macros_2.12;1.7.1!core-macros_2.12.jar (121ms)
+2022.11.05 22:34:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.7.1/zinc-classfile_2.12-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.swoval#file-tree-views;2.1.9!file-tree-views.jar (272ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.7.0/gigahorse-apache-http_2.12-0.7.0.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-cache_2.12;1.7.1!util-cache_2.12.jar (314ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.7.0/gigahorse-core_2.12-0.7.0.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#test-agent;1.7.1!test-agent.jar (298ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/shaded-apache-httpasyncclient/0.7.0/shaded-apache-httpasyncclient-0.7.0.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.16!scala-library.jar (1117ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.6.1/ssl-config-core_2.12-0.6.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-classfile_2.12;1.7.1!zinc-classfile_2.12.jar (306ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#compiler-bridge_2.12;1.7.1!compiler-bridge_2.12.jar (309ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar ...
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#task-system_2.12;1.7.1!task-system_2.12.jar (782ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] net.java.dev.jna#jna;5.12.0!jna.jar (541ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.7.1/zinc-core_2.12-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.eed3si9n#gigahorse-apache-http_2.12;0.7.0!gigahorse-apache-http_2.12.jar (344ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.7.1/zinc-persist_2.12-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-logging_2.12;1.7.1!util-logging_2.12.jar (1226ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.7.1/zinc-compile-core_2.12-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.eed3si9n#gigahorse-core_2.12;0.7.0!gigahorse-core_2.12.jar (406ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.7.1/zinc-persist-core-assembly-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.typesafe#ssl-config-core_2.12;0.6.1!ssl-config-core_2.12.jar(bundle) (412ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.7.1/protocol_2.12-1.7.1.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.reactivestreams#reactive-streams;1.0.3!reactive-streams.jar (397ms)
+2022.11.05 22:34:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.5.0/ipcsocket-1.5.0.jar ...
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.28!slf4j-api.jar (406ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.eed3si9n#shaded-apache-httpasyncclient;0.7.0!shaded-apache-httpasyncclient.jar (544ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] com.typesafe#config;1.4.2!config.jar(bundle) (422ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-compile-core_2.12;1.7.1!zinc-compile-core_2.12.jar (310ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-core_2.12;1.7.1!zinc-core_2.12.jar (436ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] net.java.dev.jna#jna-platform;5.12.0!jna-platform.jar (972ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt.ipcsocket#ipcsocket;1.5.0!ipcsocket.jar (201ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.16!scala-compiler.jar (1044ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#protocol_2.12;1.7.1!protocol_2.12.jar (233ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-persist-core-assembly;1.7.1!zinc-persist-core-assembly.jar (347ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-persist_2.12;1.7.1!zinc-persist_2.12.jar (532ms)
+2022.11.05 22:34:30 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.16!scala-reflect.jar (1592ms)
+2022.11.05 22:34:30 ERROR :: retrieving :: org.scala-sbt#boot-app
+2022.11.05 22:34:30 ERROR 	confs: [default]
+2022.11.05 22:34:31 ERROR 	81 artifacts copied, 0 already retrieved
+2022.11.05 22:34:32 INFO  [info] Updated file C:\Users\onni\Documents\codescala\displacement-map\project\build.properties: set sbt.version to 1.7.1
+2022.11.05 22:34:32 INFO  [info] welcome to sbt 1.7.1 (Oracle Corporation Java 1.8.0_301)
+2022.11.05 22:34:34 INFO  [info] loading settings for project global-plugins from assembly.sbt ...
+2022.11.05 22:34:34 INFO  [info] loading global plugins from C:\Users\onni\.sbt\1.0\plugins
+2022.11.05 22:34:38 INFO  [info] loading settings for project displacement-map-build-build from metals.sbt ...
+2022.11.05 22:34:38 INFO  [info] loading project definition from C:\Users\onni\Documents\codescala\displacement-map\project\project
+2022.11.05 22:34:38 INFO  [info] loading settings for project displacement-map-build from metals.sbt ...
+2022.11.05 22:34:38 INFO  [info] loading project definition from C:\Users\onni\Documents\codescala\displacement-map\project
+2022.11.05 22:34:40 INFO  [success] Generated .bloop\displacement-map-build.json
+2022.11.05 22:34:40 INFO  [success] Total time: 2 s, completed 5.11.2022 22:34:40
+2022.11.05 22:34:40 INFO  [info] loading settings for project displacement-map from build.sbt ...
+2022.11.05 22:34:40 INFO  [info] set current project to displacement-map (in build file:/C:/Users/onni/Documents/codescala/displacement-map/)
+2022.11.05 22:34:41 INFO  [success] Generated .bloop\displacement-map-test.json
+2022.11.05 22:34:41 INFO  [success] Generated .bloop\displacement-map.json
+2022.11.05 22:34:41 INFO  [success] Total time: 0 s, completed 5.11.2022 22:34:41
+2022.11.05 22:34:42 INFO  time: ran 'sbt bloopInstall' in 22s
+2022.11.05 22:34:42 INFO  Attempting to connect to the build server...
+2022.11.05 22:34:42 INFO  Bloop uses C:\Program Files\Java\jre1.8.0_301 defined at C:\Users\onni\.bloop\bloop.json
+2022.11.05 22:34:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\onni\Documents\codescala\displacement-map\.metals\bsp.trace.json or C:\Users\onni\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.11.05 22:34:47 INFO  Attempting to connect to the build server...
+2022.11.05 22:34:47 INFO  Bloop uses C:\Program Files\Java\jre1.8.0_301 defined at C:\Users\onni\.bloop\bloop.json
+2022.11.05 22:34:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\onni\Documents\codescala\displacement-map\project\.metals\bsp.trace.json or C:\Users\onni\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.11.05 22:34:49 INFO  time: Connected to build server in 7.49s
+2022.11.05 22:34:49 INFO  Connected to Build server: Bloop v1.5.4
+2022.11.05 22:34:51 WARN  Could not find java sources in C:\Program Files\Java\src.zip, C:\Program Files\Java\lib\src.zip, C:\Program Files\Java\jre1.8.0_301\src.zip, C:\Program Files\Java\jre1.8.0_301\lib\src.zip. Java symbols will not be available.
+2022.11.05 22:34:52 WARN  Could not find java sources in C:\Program Files\Java\src.zip, C:\Program Files\Java\lib\src.zip, C:\Program Files\Java\jre1.8.0_301\src.zip, C:\Program Files\Java\jre1.8.0_301\lib\src.zip. Java symbols will not be available.
+2022.11.05 22:34:52 WARN  Could not find java sources in C:\Program Files\Java\src.zip, C:\Program Files\Java\lib\src.zip, C:\Program Files\Java\jre1.8.0_301\src.zip, C:\Program Files\Java\jre1.8.0_301\lib\src.zip. Java symbols will not be available.
+2022.11.05 22:34:52 INFO  time: indexed workspace in 3.1s
+2022.11.05 22:34:53 INFO  compiling displacement-map (1 scala source)
+2022.11.05 22:34:54 INFO  time: compiled displacement-map in 1.46s
+marraskuuta 05, 2022 10:38:04 IP. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.05 22:40:06 INFO  compiling displacement-map (1 scala source)
+2022.11.05 22:40:06 INFO  time: compiled displacement-map in 0.54s
+2022.11.05 22:40:09 INFO  compiling displacement-map (1 scala source)
+2022.11.05 22:40:09 INFO  time: compiled displacement-map in 0.18s
+2022.11.05 22:40:49 INFO  compiling displacement-map (1 scala source)
+2022.11.05 22:40:49 INFO  time: compiled displacement-map in 0.51s
