@@ -15,6 +15,8 @@ class MainWindow() extends MainFrame:
 
         override protected def paintComponent(g: Graphics2D): Unit =
 
+            super.paintComponent(g)
+            
             g.setColor(Color.red)
             g.drawRect(100,100,100,100)
         
