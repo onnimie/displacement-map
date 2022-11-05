@@ -2,14 +2,14 @@ import scala.swing.*
 import java.awt.Color
 
 object App extends SimpleSwingApplication:
-    val runner = MainWindow
+    val top = MainWindow()
 
-object MainWindow extends MainFrame:
+class MainWindow() extends MainFrame:
 
     title = "window title c:"
 
     contents = new Panel:
-        
+
         background = Color.darkGray
         preferredSize = new Dimension(300, 300)
 
