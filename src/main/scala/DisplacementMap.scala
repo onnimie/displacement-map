@@ -5,11 +5,11 @@ import scala.collection.mutable.ArrayBuffer
 import scala.math.round
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 10):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 10, var maxVerticalDisplacement: Int = 10):
   
     //val valueRange: Range = Range(0, 256)
 
-    private val grid = Array.fill[Int](width, height)(100) //init grid with 0's
+    private val grid = Array.fill[Int](width, height)(255) //init grid with 0's
 
     def getRaw(x: Int, y: Int): Int = grid(x)(y)
 

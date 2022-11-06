@@ -64,6 +64,9 @@ object TextureOps:
         val h = img.getHeight()
         
         val g = img.createGraphics()
+
+        val copy = copyImage(img)
+        val g_copy = copy.createGraphics()
         for i <- 0 until w do
             for j <- 0 until h do
                 val rgba: Int = img.getRGB(i, j)
@@ -73,13 +76,15 @@ object TextureOps:
                 val red = (rgba & 0xff0000) >> 16
                 val alpha = (rgba & 0xff000000) >>> 24
 
-                val newX = displacementMap.getDisplacementForX(i, j)
-                val newY = displacementMap.getDisplacementForY(i, j)
+                val newX = i + displacementMap.getDisplacementForX(i, j)
+                val newY = j + displacementMap.getDisplacementForY(i, j)
+                //println(s"old: ($i,$j), new: ($newX,$newY)")
 
-                g.setColor(Color(red, green, blue, alpha))
-                g.setColor(Color.black)
+                g_copy.setColor(Color(red, green, blue, alpha))
+                //g.setColor(Color.black)
                 //g.drawRect(i, j, 1, 1) //these are for testing
-                g.drawRect(newX, newY, 1, 1)
+                g_copy.drawRect(newX, newY, 1, 1)
 
+        g.drawImage(copy, 0, 0, null)
 
 end TextureOps
