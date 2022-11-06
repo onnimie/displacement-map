@@ -7,11 +7,11 @@ import java.awt.Color
 import scala.math.round
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 30, var maxVerticalDisplacement: Int = 30):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 30):
   
     //val valueRange: Range = Range(0, 256)
 
-    private val grid = Array.fill[Int](width, height)(255) //init grid with 0's
+    private val grid = Array.fill[Int](width, height)(0) //init grid with 0's
 
     def getRaw(x: Int, y: Int): Int = grid(x)(y)
 
@@ -32,10 +32,23 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
             for j <- 0 until height do
                 val value = getRaw(i, j)
                 val color = Color(value, value, value)
+                g.setColor(color)
                 g.drawRect(i, j, 1, 1)
         g.dispose()
         img
 
+
+
     // TODO: create some functions for editing the grid of a displacement map
+
+    def makeIntoGradient(): Unit = 
+        val step_x = 255.0f / width
+        //val step_y = 255.0f / height
+
+        for i <- 0 until width do
+            for j <- 0 until height do
+                grid(i)(j) = round(step_x * i)
+    
+
 
 end DisplacementMap

@@ -15,6 +15,8 @@ class MainWindow() extends MainFrame:
     val copy_image = TextureOps.copyImage(test_image.bufferedImage)
     //TextureOps.makeGray(copy_image)
     val displacementMap = DisplacementMap(test_image_width, test_image_height)
+    
+    displacementMap.makeIntoGradient()
     TextureOps.displace(copy_image, displacementMap)
 
     val contentsPanel = new FlowPanel:
