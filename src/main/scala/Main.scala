@@ -14,6 +14,7 @@ class MainWindow() extends MainFrame:
 
     val copy_image = TextureOps.copyImage(test_image.bufferedImage)
     //TextureOps.makeGray(copy_image)
+    TextureOps.displace(copy_image, DisplacementMap(test_image_width, test_image_height))
 
     val contentsPanel = new FlowPanel:
 
@@ -24,11 +25,8 @@ class MainWindow() extends MainFrame:
 
             super.paintComponent(g)
 
-            g.setColor(Color.red)
-            g.drawRect(100,100,100,100)
-
             g.drawImage(test_image.bufferedImage, 0, 0, null)
-            TextureOps.displace(copy_image, DisplacementMap(test_image_width, test_image_height))
+            
             g.drawImage(copy_image, test_image_width, 0, null)
         
         end paintComponent

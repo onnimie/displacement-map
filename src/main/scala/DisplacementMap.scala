@@ -5,7 +5,7 @@ import scala.collection.mutable.ArrayBuffer
 import scala.math.round
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 10, var maxVerticalDisplacement: Int = 10):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 30, var maxVerticalDisplacement: Int = 30):
   
     //val valueRange: Range = Range(0, 256)
 
