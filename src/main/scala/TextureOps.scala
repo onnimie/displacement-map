@@ -12,6 +12,8 @@ import swing.Panel
 import swing.Dimension
 
 import scala.math.pow
+import java.awt.Color
+import java.awt.Graphics2D
 
 object TextureOps:
 
@@ -54,3 +56,30 @@ object TextureOps:
         this.makeGray(ret)
         ret
     end makeGrayCopy
+
+
+    // displace an image with the given displacementMap
+    def displace(img: BufferedImage, displacementMap: DisplacementMap): Unit = 
+        val w = img.getWidth()
+        val h = img.getHeight()
+        
+        val g = img.createGraphics()
+        for i <- 0 until w do
+            for j <- 0 until h do
+                val rgba: Int = img.getRGB(i, j)
+
+                val blue = rgba & 0xff;
+                val green = (rgba & 0xff00) >> 8
+                val red = (rgba & 0xff0000) >> 16
+                val alpha = (rgba & 0xff000000) >>> 24
+
+                val newX = displacementMap.getDisplacementForX(i, j)
+                val newY = displacementMap.getDisplacementForY(i, j)
+
+                g.setColor(Color(red, green, blue, alpha))
+                g.setColor(Color.black)
+                //g.drawRect(i, j, 1, 1) //these are for testing
+                g.drawRect(newX, newY, 1, 1)
+
+
+end TextureOps
