@@ -14,12 +14,13 @@ class MainWindow() extends MainFrame:
 
     val copy_image = TextureOps.copyImage(test_image.bufferedImage)
     //TextureOps.makeGray(copy_image)
-    TextureOps.displace(copy_image, DisplacementMap(test_image_width, test_image_height))
+    val displacementMap = DisplacementMap(test_image_width, test_image_height)
+    TextureOps.displace(copy_image, displacementMap)
 
     val contentsPanel = new FlowPanel:
 
         background = Color.darkGray
-        preferredSize = new Dimension(test_image_width*2, test_image_height)
+        preferredSize = new Dimension(test_image_width*3, test_image_height)
 
         override protected def paintComponent(g: Graphics2D): Unit =
 
@@ -27,7 +28,9 @@ class MainWindow() extends MainFrame:
 
             g.drawImage(test_image.bufferedImage, 0, 0, null)
             
-            g.drawImage(copy_image, test_image_width, 0, null)
+            g.drawImage(displacementMap.getBufferedImage, test_image_width, 0, null)
+
+            g.drawImage(copy_image, test_image_width * 2, 0, null)
         
         end paintComponent
 

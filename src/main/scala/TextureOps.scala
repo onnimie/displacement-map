@@ -19,10 +19,10 @@ object TextureOps:
 
 
     def copyImage(source: BufferedImage): BufferedImage =
-        val clone: BufferedImage = new BufferedImage(source.getWidth(), source.getHeight(), source.getType());
-        val g: Graphics2D = clone.createGraphics();
-        g.drawImage(source, 0, 0, null);
-        g.dispose();
+        val clone: BufferedImage = new BufferedImage(source.getWidth(), source.getHeight(), source.getType())
+        val g: Graphics2D = clone.createGraphics()
+        g.drawImage(source, 0, 0, null)
+        g.dispose()
         clone
     end copyImage
 
@@ -47,7 +47,7 @@ object TextureOps:
 
                 // Gamma compand and rescale to byte range:
                 val grayLevel: Int = (255.0 * pow(lum, 1.0 / 2.2)).toInt
-                val gray: Int = (grayLevel << 16) + (grayLevel << 8) + grayLevel;
+                val gray: Int = (grayLevel << 16) + (grayLevel << 8) + grayLevel
                 img.setRGB(x, y, gray)
     end makeGray
 
@@ -63,10 +63,10 @@ object TextureOps:
         val w = img.getWidth()
         val h = img.getHeight()
         
-        val g = img.createGraphics()
+        val g: Graphics2D = img.createGraphics()
 
-        val copy = copyImage(img)
-        val g_copy = copy.createGraphics()
+        val copy: BufferedImage = copyImage(img)
+        val g_copy: Graphics2D = copy.createGraphics()
         for i <- 0 until w do
             for j <- 0 until h do
                 val rgba: Int = img.getRGB(i, j)
@@ -86,5 +86,7 @@ object TextureOps:
                 g_copy.drawRect(newX, newY, 1, 1)
 
         g.drawImage(copy, 0, 0, null)
+        g.dispose()
+        g_copy.dispose()
 
 end TextureOps
