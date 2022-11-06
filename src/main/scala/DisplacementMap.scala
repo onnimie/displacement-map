@@ -5,9 +5,10 @@ import java.awt.Graphics2D
 import java.awt.Color
 
 import scala.math.round
+import scala.math.{max, min}
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 5):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 1):
   
     //val valueRange: Range = Range(0, 256)
 
@@ -48,13 +49,16 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
     // TODO: create some functions for editing the grid of a displacement map
 
     def makeIntoGradient(): Unit = 
-        val step_x = 255.0f / width
-        val step_y = 255.0f / height
+        val step_x = 255.0f / width * 2
+
 
         for i <- 0 until width do
             for j <- 0 until height do
-                grid(i)(j) = round(step_x * i)
-                //grid(i)(j) = round(step_y * j)
+                if i > width/2 then
+                    grid(i)(j) = min(255, max(0, round(255.0f - step_x * (i-width/2))))
+                else
+                    grid(i)(j) = max(0, min(255, round(step_x * i)))
+
     end makeIntoGradient
 
     def scrollBy(step: Int): Unit = 
@@ -62,8 +66,8 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
             for j <- 0 until height do
                 val value = grid(i)(j)
                 val newX = (i + step) % width
-                val newY = (j + step) % height
-                helper_grid(newX)(newY) = value
+                //val newY = (j + step) % height
+                helper_grid(newX)(j) = value
         copyHelperToGrid()
     end scrollBy
 
