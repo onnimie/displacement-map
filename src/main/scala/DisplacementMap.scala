@@ -18,8 +18,9 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
     // value between -1 and 1 (corresponding for values between 0 and 255)
     def getFactor(x: Int, y: Int): Float = 
         val ret = (getRaw(x, y) - 128).toFloat / 128.0f
-        assert(ret <= 1f)
-        assert(ret >= -1f)
+        if ret > 1.0f || ret < -1.0f then
+            println("FAILFAIL: ret = " + ret)
+            assert(false)
         ret
 
     def getDisplacementForX(x: Int, y: Int): Int = round(getFactor(x, y) * maxHorizontalDisplacement)
@@ -43,11 +44,12 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
 
     def makeIntoGradient(): Unit = 
         val step_x = 255.0f / width
-        //val step_y = 255.0f / height
+        val step_y = 255.0f / height
 
         for i <- 0 until width do
             for j <- 0 until height do
                 grid(i)(j) = round(step_x * i)
+                //grid(i)(j) = round(step_y * j)
     
 
 
