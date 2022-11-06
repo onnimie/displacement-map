@@ -1,6 +1,11 @@
 import scala.swing.*
 import java.awt.Color
 
+import javax.swing.Timer
+
+import java.awt.event.ActionEvent
+import scala.swing.Swing.ActionListener
+
 object App extends SimpleSwingApplication:
     val top = MainWindow()
 
@@ -17,7 +22,7 @@ class MainWindow() extends MainFrame:
     val displacementMap = DisplacementMap(test_image_width, test_image_height)
     
     displacementMap.makeIntoGradient()
-    TextureOps.displace(copy_image, displacementMap)
+    
 
     val contentsPanel = new FlowPanel:
 
@@ -40,6 +45,13 @@ class MainWindow() extends MainFrame:
 
     contents = contentsPanel
  
+    val timerListener = ActionListener( (e: ActionEvent) => {
+        displacementMap.scrollBy(1)
+        TextureOps.displace(copy_image, displacementMap)
+        repaint()
+    })
 
+    val timer = Timer(10, timerListener)
+    timer.start()
 
 end MainWindow

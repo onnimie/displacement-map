@@ -7,11 +7,12 @@ import java.awt.Color
 import scala.math.round
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 30):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 5):
   
     //val valueRange: Range = Range(0, 256)
 
     private val grid = Array.fill[Int](width, height)(0) //init grid with 0's
+    private val helper_grid = Array.fill[Int](width, height)(0)
 
     def getRaw(x: Int, y: Int): Int = grid(x)(y)
 
@@ -38,7 +39,11 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
         g.dispose()
         img
 
-
+    private def copyHelperToGrid(): Unit =
+        for i <- 0 until width do
+            for j <- 0 until height do
+                grid(i)(j) = helper_grid(i)(j)
+                helper_grid(i)(j) = 0
 
     // TODO: create some functions for editing the grid of a displacement map
 
@@ -50,7 +55,17 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
             for j <- 0 until height do
                 grid(i)(j) = round(step_x * i)
                 //grid(i)(j) = round(step_y * j)
-    
+    end makeIntoGradient
+
+    def scrollBy(step: Int): Unit = 
+        for i <- 0 until width do
+            for j <- 0 until height do
+                val value = grid(i)(j)
+                val newX = (i + step) % width
+                val newY = (j + step) % height
+                helper_grid(newX)(newY) = value
+        copyHelperToGrid()
+    end scrollBy
 
 
 end DisplacementMap
