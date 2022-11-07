@@ -59,13 +59,13 @@ object TextureOps:
 
 
     // displace an image with the given displacementMap
-    def displace(img: BufferedImage, displacementMap: DisplacementMap): Unit = 
+    def displace(img: BufferedImage, displacementMap: DisplacementMap): BufferedImage = 
         val w = img.getWidth()
         val h = img.getHeight()
         
         val g: Graphics2D = img.createGraphics()
 
-        val copy: BufferedImage = copyImage(img)
+        val copy: BufferedImage = new BufferedImage(w, h, img.getType())
         val g_copy: Graphics2D = copy.createGraphics()
         for i <- 0 until w do
             for j <- 0 until h do
@@ -85,8 +85,9 @@ object TextureOps:
                 //g.drawRect(i, j, 1, 1) //these are for testing
                 g_copy.drawRect(newX, newY, 1, 1)
 
-        g.drawImage(copy, 0, 0, null)
+        //g.drawImage(copy, 0, 0, null)
         g.dispose()
         g_copy.dispose()
+        copy
 
 end TextureOps

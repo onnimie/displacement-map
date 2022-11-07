@@ -8,7 +8,7 @@ import scala.math.round
 import scala.math.{max, min}
 
 
-class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 0, var maxVerticalDisplacement: Int = 1):
+class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplacement: Int = 1, var maxVerticalDisplacement: Int = 0):
   
     //val valueRange: Range = Range(0, 256)
 

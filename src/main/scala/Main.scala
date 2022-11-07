@@ -17,7 +17,7 @@ class MainWindow() extends MainFrame:
     val test_image_width = test_image.bufferedImage.getWidth()
     val test_image_height = test_image.bufferedImage.getHeight()
 
-    val copy_image = TextureOps.copyImage(test_image.bufferedImage)
+    var copy_image = TextureOps.copyImage(test_image.bufferedImage)
     //TextureOps.makeGray(copy_image)
     val displacementMap = DisplacementMap(test_image_width, test_image_height)
     
@@ -47,7 +47,7 @@ class MainWindow() extends MainFrame:
  
     val timerListener = ActionListener( (e: ActionEvent) => {
         displacementMap.scrollBy(1)
-        TextureOps.displace(copy_image, displacementMap)
+        copy_image = TextureOps.displace(test_image.bufferedImage, displacementMap)
         repaint()
     })
 
