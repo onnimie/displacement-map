@@ -89,5 +89,39 @@ object TextureOps:
         g.dispose()
         g_copy.dispose()
         copy
+    end displace
+
+
+    def scrolledImageHorizontalVertical(img: BufferedImage, x_steps: Int, y_steps: Int): BufferedImage = 
+        val w = img.getWidth()
+        val h = img.getHeight()
+        
+        val g: Graphics2D = img.createGraphics()
+        val copy: BufferedImage = new BufferedImage(w, h, img.getType())
+        val g_copy: Graphics2D = copy.createGraphics()
+
+        for i <- 0 until w do
+            for j <- 0 until h do
+                val rgba: Int = img.getRGB(i, j)
+
+                val blue = rgba & 0xff;
+                val green = (rgba & 0xff00) >> 8
+                val red = (rgba & 0xff0000) >> 16
+                val alpha = (rgba & 0xff000000) >>> 24
+
+                var newX = (i + x_steps) % w
+                var newY = (j + y_steps) % w
+
+                if newX < 0 then newX = w + newX
+                if newY < 0 then newY = h + newY
+
+                g_copy.setColor(Color(red, green, blue, alpha))
+                g_copy.drawRect(newX, newY, 1, 1)
+        g.drawImage(copy, 0, 0, null)
+        g.dispose()
+        g_copy.dispose()
+        copy
+
+    end scrolledImageHorizontalVertical
 
 end TextureOps
