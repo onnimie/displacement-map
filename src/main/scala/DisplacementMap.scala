@@ -61,15 +61,19 @@ class DisplacementMap(val width: Int, val height: Int, var maxHorizontalDisplace
 
     end makeIntoGradient
 
-    def scrollBy(step: Int): Unit = 
+    def scrollByHorizontalVertical(x_step: Int, y_step: Int): Unit = 
         for i <- 0 until width do
             for j <- 0 until height do
                 val value = grid(i)(j)
-                val newX = (i + step) % width
-                //val newY = (j + step) % height
-                helper_grid(newX)(j) = value
+                var newX = (i + x_step) % width
+                var newY = (j + y_step) % height
+
+                if newX < 0 then newX = width + newX
+                if newY < 0 then newY = height + newY
+
+                helper_grid(newX)(newY) = value
         copyHelperToGrid()
-    end scrollBy
+    end scrollByHorizontalVertical
 
 
 end DisplacementMap

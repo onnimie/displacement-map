@@ -46,7 +46,7 @@ class MainWindow() extends MainFrame:
     contents = contentsPanel
  
     val timerListener = ActionListener( (e: ActionEvent) => {
-        displacementMap.scrollBy(1)
+        displacementMap.scrollByHorizontalVertical(1, 0)
         copy_image = TextureOps.displace(test_image.bufferedImage, displacementMap)
         repaint()
     })
